@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Software - Origen, Metodologías y Profesiones</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="navbar">
+    <div class="nav-brand">&lt;DevSoftware Hub /&gt;</div>
+    <ul class="nav-menu">
+      <li><a href="#origen">Origen</a></li>
+      <li><a href="#metodologias">Metodologías</a></li>
+      <li><a href="#lenguajes">Lenguajes</a></li>
+      <li><a href="#orientador">Orientador</a></li>
+      <li><a href="#carreras">Carreras</a></li>
+    </ul>
+  </nav>
+
+  <!-- ENCABEZADO HERO CON LA IMAGEN AL PRINCIPio -->
+  <header class="hero-header">
+    <div class="hero-content">
+      <div class="hero-image-container">
+        <!-- Imagen al inicio de la página -->
+        <img src="imagenes/La-tecnologia-del-futuro-5-avances-que-cambiaran-el-mundo-2000x1200-1-1024x614.jpg" alt="Tecnología del Futuro y Software" class="hero-banner-img">
+      </div>
+      <span class="badge">Tecnología &amp; Futuro</span>
+      <h1>Evolución y Áreas del Desarrollo de Software</h1>
+      <p>Explora desde las primeras computadoras hasta las arquitecturas modernas en la nube y la inteligencia artificial.</p>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <!-- SECCIÓN 1: ORIGEN E HISTORIA (PESTAÑAS) -->
+    <section class="section-block" id="origen">
+      <h2 class="block-title">Origen e Historia del Software</h2>
+      <p class="section-desc">Selecciona una era para explorar los hitos clave de la computación:</p>
+      
+      <div class="tabs-container">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="era1">1940s-1950s: Primeros Algoritmos</button>
+          <button class="tab-btn" data-tab="era2">1960s-1970s: Nacimiento de Lenguajes</button>
+          <button class="tab-btn" data-tab="era3">1980s-1990s: Era Personal y Web</button>
+          <button class="tab-btn" data-tab="era4">2000s-Presente: Nube e IA</button>
+        </div>
+        
+        <div class="tab-content">
+          <div id="era1" class="tab-pane active">
+            <h3>Los Inicios y la Programación Física</h3>
+            <p>La programación se realizaba cambiando conexiones de cables e interruptores manuales en máquinas como la ENIAC. Ada Lovelace fue la primera pionera en escribir un algoritmo estructurado para una máquina analítica.</p>
+          </div>
+          <div id="era2" class="tab-pane">
+            <h3>Surgimiento de los Lenguajes de Alto Nivel</h3>
+            <p>Se crearon lenguajes legibles por humanos como FORTRAN, COBOL y C. En 1968 se celebró la Conferencia NATO, donde se acuñó oficialmente el término "Ingeniería de Software" para afrontar la complejidad del desarrollo.</p>
+          </div>
+          <div id="era3" class="tab-pane">
+            <h3>Computadoras Personales y la World Wide Web</h3>
+            <p>Con la llegada de MS-DOS, Windows y la Web, la programación pasó de las computadoras centrales a millones de hogares. Nacieron lenguajes como HTML, CSS, JavaScript, Java y Python.</p>
+          </div>
+          <div id="era4" class="tab-pane">
+            <h3>Microservicios, DevOps e Inteligencia Artificial</h3>
+            <p>El software actual se despliega dinámicamente en servidores en la nube (AWS, Azure) usando contenedores como Docker y modelos avanzados de aprendizaje automático.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: METODOLOGÍAS DE TRABAJO -->
+    <section class="section-block" id="metodologias">
+      <h2 class="block-title">Metodologías de Desarrollo</h2>
+      <p class="section-desc">Formas en que los equipos organizan sus proyectos de software:</p>
+      
+      <div class="methodology-grid">
+        <div class="method-card">
+          <h4>Modelo en Cascada (Waterfall)</h4>
+          <p>Enfoque tradicional donde las etapas (requisitos, diseño, código, pruebas) se ejecutan una después de la otra de forma lineal.</p>
+        </div>
+        <div class="method-card">
+          <h4>Metodologías Ágiles (Agile / Scrum)</h4>
+          <p>Desarrollo iterativo que entrega funcionalidades en ciclos cortos (sprints de 2 a 4 semanas), permitiendo adaptarse a cambios rápido.</p>
+        </div>
+        <div class="method-card">
+          <h4>DevOps &amp; CI/CD</h4>
+          <p>Integración continua de código e integración de equipos de desarrollo con operaciones para automatizar despliegues de software.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: LENGUAJES POPULARES -->
+    <section class="section-block" id="lenguajes">
+      <h2 class="block-title">Lenguajes y Tecnologías Clave</h2>
+      <p class="section-desc">Herramientas esenciales en el ecosistema informático actual:</p>
+
+      <ul class="tech-list">
+        <li><strong>JavaScript / TypeScript:</strong> Lenguaje fundamental para el desarrollo web en navegador y servidor (Node.js).</li>
+        <li><strong>Python:</strong> Líder en Inteligencia Artificial, análisis de datos, automatización y desarrollo backend.</li>
+        <li><strong>Java / C#:</strong> Estándares de la industria corporativa y desarrollo de aplicaciones a gran escala.</li>
+        <li><strong>SQL:</strong> Lenguaje estándar para consulta y gestión de bases de datos relacionales.</li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN 4: TEST DE PERFIL PROFESIONAL -->
+    <section class="section-block test-box" id="orientador">
+      <h2>Test de Orientación Profesional</h2>
+      <p>Selecciona tu área de interés principal para recibir una recomendación:</p>
+      
+      <div class="quiz-options">
+        <button class="quiz-btn" onclick="evaluarPerfil('diseno')">🎨 Interfaces y Experiencia Visual</button>
+        <button class="quiz-btn" onclick="evaluarPerfil('logica')">⚙️ Lógica de Servidores y Datos</button>
+        <button class="quiz-btn" onclick="evaluarPerfil('seguridad')">🛡️ Ciberseguridad y Redes</button>
+        <button class="quiz-btn" onclick="evaluarPerfil('datos')">📊 Análisis de Datos e IA</button>
+      </div>
+
+      <div id="quizResult" class="quiz-result">
+        Haz clic en una opción superior para calcular tu perfil tecnológico.
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: CARRERAS EN DETALLE -->
+    <section class="section-block" id="carreras">
+      <h2 class="block-title">Carreras en la Industria del Software</h2>
+      
+      <div class="cards-grid">
+        <article class="info-card">
+          <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80" alt="Diseño Web y Frontend">
+          <div class="card-body">
+            <h3>Ingeniero Frontend</h3>
+            <p>Se encarga de transformar diseños visuales en código interactivo ejecutable en navegadores web.</p>
+            <span class="tag">HTML, CSS, JavaScript, React</span>
+            <a href="https://developer.mozilla.org/es/" target="_blank" class="card-link">Recursos en MDN &rarr;</a>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Servidores y Backend">
+          <div class="card-body">
+            <h3>Arquitecto Backend</h3>
+            <p>Especialista en estructurar bases de datos, APIs de comunicación y la lógica interna de la aplicación.</p>
+            <span class="tag">Python, Node.js, SQL, Java</span>
+            <a href="https://www.w3schools.com/" target="_blank" class="card-link">Documentación &rarr;</a>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Seguridad Informática">
+          <div class="card-body">
+            <h3>Especialista en Ciberseguridad</h3>
+            <p>Analiza vulnerabilidades en el código, gestiona permisos de infraestructura y previene ataques maliciosos.</p>
+            <span class="tag">Hacking Ético, Linux, Redes</span>
+            <a href="https://www.netacad.com/" target="_blank" class="card-link">Más información &rarr;</a>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Ciencia de Datos e Inteligencia Artificial">
+          <div class="card-body">
+            <h3>Científico de Datos / IA</h3>
+            <p>Construye modelos predictivos y algoritmos de Machine Learning utilizando estadística e ingeniería de software.</p>
+            <span class="tag">Python, R, TensorFlow, Pandas</span>
+            <a href="https://www.kaggle.com/" target="_blank" class="card-link">Comunidad Kaggle &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <p>&copy; 2026 - Guía Integral de Desarrollo de Software | Entrega Académica</p>
+  </footer>
+
+  <script src="js/java.js"></script>
+</body>
+</html>
